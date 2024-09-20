@@ -73,7 +73,7 @@ jobs:
           mvn clean verify sonar:sonar \
             -Dsonar.projectKey=create \
             -Dsonar.host.url=http://13.126.193.120:9000/ \
-            -Dsonar.login=sqb_f6d0546c850ea40542735baef0f585c9afb89ff6 \
+            -Dsonar.login=squ_0d27dbefff63f14bbbe33ce6516538573d9ab8d6 \
             -Dsonar.dependencyCheck.summarize=true \
             -Dsonar.dependencyCheck.htmlReportPath=target/dependency-check-report.html
           
