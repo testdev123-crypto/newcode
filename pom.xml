@@ -36,6 +36,8 @@
     <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
     <spring-format.version>0.0.41</spring-format.version>
 
+    <sonar.dependencyCheck.htmlReportPath>target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
+
   </properties>
 
   <dependencies>
@@ -274,6 +276,21 @@
 		<?m2e ignore?>
         <groupId>org.cyclonedx</groupId>
         <artifactId>cyclonedx-maven-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>10.0.3</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>
+                check
+              </goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
 
     </plugins>
